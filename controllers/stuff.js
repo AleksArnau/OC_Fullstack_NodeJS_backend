@@ -1,7 +1,6 @@
 const Thing = require("../models/Thing");
 
 exports.createThing = (req, res, next) => {
-  console.log(req.body);
   const thing = new Thing({
     title: req.body.title,
     description: req.body.description,
